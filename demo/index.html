@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<title>mySlider demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.easing.js"></script>
+	<script type="text/javascript" src="../mySlider.js"></script>
+</head>
+<body>
+
+<style>
+	*{margin: 0; padding: 0;}
+	.clear{clear: both;}
+	.overflow{overflow: hidden; height: 100%;}
+	ul{list-style: none;}
+	.slider{width: 580px; height: 50px; position: relative;}
+	.slider__item{width: 180px; height: 50px; margin-right: 20px; float: left; background: grey;}
+	.slider__item.green{background: green;}
+	.slider__item.red{background: red;}
+	.slider__item.yellow{background: yellow;}
+	.slider__item.blue{background: blue;}
+	.slider__left, .slider__right{position: absolute; bottom: -50px; width: 30px; height: 30px; cursor: pointer; background: black; color: white;}
+	.slider__left{left: 0;}
+	.slider__right{right: 0;}
+</style>
+
+<script>
+$(document).ready(function() {
+	$('.slider').mySlider({
+		
+	});
+});
+</script>
+
+<div class="slider">
+	<div class="overflow">
+		<ul class="sldier__wr">
+			<li class="slider__item green"></li>
+			<li class="slider__item red"></li>
+			<li class="slider__item yellow"></li>
+			<li class="slider__item red"></li>
+			<li class="slider__item yellow"></li>
+			<li class="slider__item blue"></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="slider__left prev"><-</div>
+	<div class="slider__right next">-></div>
+</div>
+
+
+</body>
+</html>

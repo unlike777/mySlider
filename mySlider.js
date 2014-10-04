@@ -23,8 +23,8 @@
 			var $this = $(this),
 				$elems = $this.find(options.elem),
 				count = $elems.length,
-				$btnL = $this.find(options.btnPrev),
-				$btnR = $this.find(options.btnNext),
+				$btnL = $(options.btnPrev),
+				$btnR = $(options.btnNext),
 				$wr = $this.find(options.wr),
 				width = $elems.first().outerWidth(true),
 				animate = true;
